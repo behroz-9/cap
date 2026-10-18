@@ -5,47 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cappuccino - Live Chat Ecosystem</title>
   
-  <!-- Supabase JS Client -->
+  <!-- 1. Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- 2. Supabase JS Client CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- 3. Supabase Configuration Script -->
   <script>
-    // Supabase Configuration
     const SUPABASE_URL = 'https://utuppiydooaifwnkrytl.supabase.co';
     const SUPABASE_ANON_KEY = 'sb_publishable_DtEq6JJw5VYEYwRzuHbWNQ_yTetCKVN';
 
     const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
   </script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            espresso: {
-              950: '#0d0704',
-              900: '#170d07',
-              800: '#1e110a',
-              700: '#2c190e',
-              600: '#422515',
-              500: '#5c331d'
-            },
-            caramel: {
-              400: '#fbbf24',
-              500: '#f59e0b',
-              600: '#d97706',
-              700: '#b45309'
-            },
-            cream: {
-              100: '#fef3c7',
-              200: '#fde68a',
-              300: '#fcd34d'
-            }
-          },
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif']
-          }
-        }
-      }
-    }
-  </script>
+
+  <!-- 4. FontAwesome Icons & Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
 
   <style>
     /* Custom Scrollbar for smooth chat feel */
